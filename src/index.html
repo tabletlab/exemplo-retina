@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Retina</title>
+	<meta charset="UTF-8" />
+	<link rel="stylesheet" type="text/css" href="estilo.css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0">
+</head>
+<body>
+	<div class="container">
+		<div id="imagem1" class="wrap-imagem">
+			<img src="imgs/paisagem.png" id="imagem1_img" />
+			<p>Por Javascript</p>
+		</div>
+
+		<div id="imagem2" class="wrap-imagem">
+			<p>Por -webkit-image-set (somente iOS 6 ou superior)</p>
+		</div>
+
+		<div id="imagem3" class="wrap-imagem">
+			<p>Por CSS Media Query</p>
+		</div>
+
+		<div id="imagem4" class="wrap-imagem">
+			<img src="imgs/paisagem@2x.png" />
+			<p>Mesma imagem tanto em retina quanto em não-retina (não recomendado)</p>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="retina.js"></script>
+</body>
+</html>

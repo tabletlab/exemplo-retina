@@ -1,0 +1,75 @@
+* { margin: 0; padding: 0; }
+body { 
+	background-image: url(imgs/bg.png);
+	height: 100%; 
+	width: 100%; 
+}
+
+.container { width: 1024px; height: 768px; position: relative;}
+
+.container .wrap-imagem {
+	position: absolute;
+	width: 424px;
+	height: 281px;
+	background-size: 100% 100%;
+	background-color: #000;
+}
+
+	.container .wrap-imagem>img {
+		width: inherit;
+		height: inherit;
+	}
+
+.container .wrap-imagem p {
+	position: absolute;
+	padding: 5px;
+	background-color: rgba(255, 255, 255, 0.8);
+	color: #000;
+	font-size: 14px;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-family: sans-serif;
+	bottom: 0;
+	left: 0;
+	width: 414px;
+}
+
+.container #imagem1 {
+	left: 79px;
+	top: 138px;
+}
+
+.container #imagem2 {
+	left: 521px;
+	top: 138px;
+	background: -webkit-image-set( 
+		url(imgs/paisagem.png) 1x, 
+		url(imgs/paisagem@2x.png) 2x
+	); 
+}
+
+.container #imagem3 {
+	left: 79px;
+	top: 437px;
+	background-image: url(imgs/paisagem.png);
+}
+
+.container #imagem4 {
+	left: 521px;
+	top: 437px;
+}
+
+
+
+
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+	.container #imagem3 {
+		background-image: url(imgs/paisagem@2x.png);
+	}	
+
+	body {
+		background-image: url(imgs/bg@2x.png);
+		background-size: 1024px 768px;
+	}
+}
+
